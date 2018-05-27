@@ -1,0 +1,2 @@
+# LearningJavaScript
+Practicing Java Script
