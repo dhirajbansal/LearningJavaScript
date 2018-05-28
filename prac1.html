@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prac</title>
+</head>
+<body>
+	<div id="first">
+<input type="text" name="token" id="token"></br>
+<input type="submit" name="submit"  onclick="Show()"></br></br>
+</div>
+<div id="second" style="display: none;">
+message:
+<input type="text" name="message"></br>
+type
+<input type="text" name="oauthtype"></br>
+code:
+<input type="number" name="code"></br>
+error_subcode:
+<input type="number" name="error-code"></br>
+fbtrace_id:
+<input type="number" name="id"></br>
+token:
+<input type="text" name="token" id="token"></br>
+
+</div>
+<script type="text/javascript">
+	var tokenval= document.getElementById("token").value;
+	 console.log(tokenval);
+     function Redirect(tokenval) {
+               window.location="file:///C:/Users/kanav/Desktop/layout.html";
+            }
+            function ShowError(tokenval) {
+               window.location="file:///C:/Users/kanav/Desktop/layout.html";
+            }
+         
+         
+         function Show() {
+         	var x=document.getElementById("second");
+         	var y=document.getElementById("first");
+         	 x.style.display='block';
+         	  y.style.display='none';
+            var z= document.getElementById('token').value;
+            console.log(z);
+
+            document.getElementById('token').value=z;
+            var m=document.getElementById('token').value;
+               console.log(m);
+         }
+        
+
+         
+      </script>
+
+</body>
+</html>
