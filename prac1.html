@@ -20,7 +20,7 @@ error_subcode:
 fbtrace_id:
 <input type="number" name="id"></br>
 token:
-<input type="text" name="token" id="token"></br>
+<input type="text" name="token1" id="token1"></br>
 
 </div>
 <script type="text/javascript">
@@ -39,12 +39,9 @@ token:
          	var y=document.getElementById("first");
          	 x.style.display='block';
          	  y.style.display='none';
-            var z= document.getElementById('token').value;
-            console.log(z);
-
-            document.getElementById('token').value=z;
-            var m=document.getElementById('token').value;
-               console.log(m);
+            var z= document.getElementById('token');
+            var a=document.getElementById('token1');
+             a.value=z.value;
          }
         
 
